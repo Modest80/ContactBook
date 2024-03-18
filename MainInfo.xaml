@@ -1,0 +1,26 @@
+﻿<Window x:Class="ContactBook.MainInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ContactBook"
+        mc:Ignorable="d"
+        Title="Обо мне" Height="520" Width="400">
+    <StackPanel>
+        <Label>Меня зовут</Label>
+        <TextBox Name="tbName" Padding="5" Margin="5"></TextBox>
+        <Label>Дата рождения</Label>
+        <DatePicker Name="dtBirthday" Padding="5" Margin="5"></DatePicker>
+        <Label>Мобильный телефон</Label>
+        <TextBox Name="tbMobilePhone" Margin="5" Padding="5"></TextBox>
+        <Label>Эл-почта</Label>
+        <TextBox Name="tbEmail" Padding="5" Margin="5"></TextBox>
+        <Label>Домашний адрес</Label>
+        <TextBox Name="tbHomeAddress" Margin="5" Padding="5"></TextBox>
+        <Label>Коротко обо мне</Label>
+        <TextBox Name="tbAbout" Height="70"></TextBox>
+        <Label>Пароль входа</Label>
+        <PasswordBox Name="pbPassword"></PasswordBox>
+        <Button Click="btnSave_Click">Сохранить</Button>
+    </StackPanel>
+</Window>
